@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.lombokSpringInjection.LombokSpringCar;
 import com.example.demo.springConstructor.SpringCar;
 import com.example.demo.springField.SpringFieldCar;
 import com.example.demo.springSetter.SpringSetterCar;
@@ -22,6 +23,9 @@ public class DemoApplication {
 		SpringFieldCar springFieldCar = context.getBean(SpringFieldCar.class);;
 		System.out.println(springFieldCar.getSpringFieldEngine().getClass());
 
+		System.out.println("-----Lombok Injection------");
+		LombokSpringCar lombokSpringCar = context.getBean(LombokSpringCar.class);;
+		System.out.println(lombokSpringCar.getEngine().getClass());
 
 
 	}
