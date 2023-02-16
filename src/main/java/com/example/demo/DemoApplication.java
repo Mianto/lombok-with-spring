@@ -23,10 +23,8 @@ public class DemoApplication {
 		SpringFieldCar springFieldCar = context.getBean(SpringFieldCar.class);;
 		System.out.println(springFieldCar.getSpringFieldEngine().getClass());
 
-		System.out.println("-----Lombok Injection------");
+		System.out.println("-----Lombok Constructor Injection------");
 		LombokSpringCar lombokSpringCar = context.getBean(LombokSpringCar.class);;
 		System.out.println(lombokSpringCar.getEngine().getClass());
-
-
 	}
 }
